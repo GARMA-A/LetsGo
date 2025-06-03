@@ -31,9 +31,9 @@ func ItemCreateversionOne(w http.ResponseWriter, r *http.Request) {
 func mainversionOne() {
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("GET /{$}", Home)
-	mux.HandleFunc("GET /item/view/{id}", ItemView)
-	mux.HandleFunc("POST /item/create", ItemCreate)
+	mux.HandleFunc("GET /{$}", HomeversionOne)
+	mux.HandleFunc("GET /item/view/{id}", ItemViewversionOne)
+	mux.HandleFunc("POST /item/create", ItemCreateversionOne)
 
 	println("Starting server on :8080")
 
